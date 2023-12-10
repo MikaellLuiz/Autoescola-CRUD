@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #467F9C;
+}
+  ::-webkit-scrollbar-thumb {
+    background-color: #1c516d;
+}
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #164056;
+}
+
+body{
+    justify-content: center;
+    text-align: center;
+
+}
+
+button{
+    border-radius: 7px;
+    color: white;
+    padding: 2%;
+    background: #467F9C;
+    border: none;
+
+}
+.backgroud-index{
+    width: 27%;
+}
+
+.title{
+    color: #164056;
+    margin-top: 3%;
+}
+.title h1{
+    font-size: 40px;
+}
+.title h2{
+    font-size: 55px;
+}
+
+.bt-entrar{
+    padding: 3.5%;
+    background: #9CC7DA;
+}
+
+.bt-entrar a{
+    color: white;
+    text-decoration: none;
+    padding: 1% 1.5% 1% 1.5%;
+    border-radius: 25px;
+    background: #164056;
+}
+
+/*-- Layout home --*/
+
+nav, .nav2{
+    background:#9CC7DA;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 2%;
+    align-items: center;
+}
+
+nav p, .nav2 p{
+    width: 94%;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 600;
+    color: #164056;
+}
+
+nav a, .nav2 a{
+    width: 7%;
+    color: white;
+    text-decoration: none;
+    padding: 0.5% 0.1% 0.5% 0.1%;
+    border-radius: 25px;
+    background: #164056;
+    font-size: 20px;
+}
+
+.nav2 p{
+    text-align: right;
+}
+
+.wellcome{
+    font-size: 50px;
+    font-weight: 600;
+    color: #164056;
+    margin: 2%;
+}
+
+.options{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.option{
+    background: #164056;
+    width: 25%;
+    margin: 1%;
+    height: 350px;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.option img{
+    width: 50%;
+    position: absolute;
+    bottom: 40%;
+    left: 25%
+}
+
+.option p {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 28%
+}
+
+/*-- Layout Gerenciamento de Carros --*/
+.carSearch{
+    background-color: #164056;
+    padding: 1%;
+    margin: 4% 7% 1% 7%;
+    border-radius: 25px;
+}
+
+.carSearch input[type='text']{
+    padding: 0.7%;
+    border-radius: 12px;
+}
+
+.carSearch input[type='submit'], #removerpesquisa{
+    border-radius: 12px;
+    color: white;
+    padding: 0.7%;
+    background: #467F9C;
+}
+
+#modelo{
+    width: 33%;
+}
+#marca{
+    width: 22%;
+}
+
+#ano{
+    width: 9%;
+}
+#capacidade{
+    width: 9%;
+}
+
+/* Tabela */
+.showCars{
+    margin: 0 7% 0 7%;
+    border-radius: 18px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #d9d9d9;
+}
+.showCars table{
+    padding: 0.5%;
+    border-collapse: collapse;
+    width: 100%;
+    background: #d9d9d9;
+    border-radius: 7px;
+}
+.rotulos table{
+    background: #164056;
+}
+.showCars th{
+    background-color: #164056;
+    font-size: 18px;
+    color: white;
+    padding: 0.5%;
+    border-radius: 15px;
+}
+.showCars tr{
+    border-bottom:#333333 solid 0.5px;
+    padding: 1%; 
+}
+.showCars td{
+    padding: 0.5%;
+    border-right:#333333 solid 0.5px; 
+    text-align: center;
+}
+.button{
+    border:none;
+}
+
+.showCars th:nth-child(1), .showCars td:nth-child(1) {
+    width: 30%; 
+}
+
+.showCars th:nth-child(2), .showCars td:nth-child(2) {
+    width: 22%; 
+}
+
+.showCars th:nth-child(3), .showCars td:nth-child(3) {
+    width: 8%; 
+}
+.showCars th:nth-child(4), .showCars td:nth-child(4) {
+    width: 10%; 
+}
+.showCars th:nth-child(5), .showCars td:nth-child(5) {
+    width: 12%; 
+}
+.showCars th:nth-child(7), .showCars td:nth-child(7) {
+    border: none;
+}
+.showCars th:nth-child(8), .showCars td:nth-child(8) {
+    border: none;
+}
+
+footer{
+    padding: 4%;
+    bottom: 0;
+    width: 100%;
+}
+
+footer button{
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 25px;
+    background: #467F9C;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    
+}
+
+/*-- Layout Agendamento de Aulas --*/
+.showScheduling{
+    margin: 5% 7% 0 7%;
+    border-radius: 18px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #164056;
+}
+.showScheduling table {
+    padding: 0.5%;
+    border-collapse: collapse;
+    width: 100%;
+    background: #d9d9d9;
+    border-radius: 7px;
+}
+.showScheduling th{
+    background-color: #164056;
+    font-size: 18px;
+    color: white;
+    padding: 0.5%;
+    border-radius: 15px;
+}
+.showScheduling tr{
+    border-bottom:#333333 solid 0.5px;
+    padding: 1%; 
+}
+.showScheduling td{
+    padding: 0.5%;
+    border-right:#333333 solid 0.5px; 
+    text-align: center;
+}
+.button{
+    border:none;
+}
+
+.showScheduling th:nth-child(1), .showScheduling td:nth-child(1) {
+    width: 25%; 
+}
+
+.showScheduling th:nth-child(2), .showScheduling td:nth-child(2) {
+    width: 15%; 
+}
+
+.showScheduling th:nth-child(3), .showScheduling td:nth-child(3) {
+    width: 10%; 
+}
+.showScheduling th:nth-child(4), .showScheduling td:nth-child(4) {
+    width: 9%; 
+}
+.showScheduling th:nth-child(5), .showScheduling td:nth-child(5) {
+    width: 9%; 
+}
+
+/* -- Cadastros --*/
+
+.registersSearch{
+    background-color: #164056;
+    padding: 1%;
+    margin: 4% 7% 1% 7%;
+    border-radius: 25px;
+}
+
+.registersSearch input[type='text'], .registersInclude input[type='text'], .cadastrarCarroForm input[type="text"], .editarCarroForm input[type="text"], .editarAlunoForm input[type="text"], .editarAlunoForm input[type="date"]{
+    padding: 0.7%;
+    border-radius: 10px;
+    border: none;
+}
+
+.registersSearch input[type='submit'], .registersInclude input[type='submit'], .cadastrarCarroForm input[type="submit"], .editarCarroForm input[type="submit"], #editar, .editarAlunoForm input[type="submit"], .agendamento input[type="submit"]{
+    border-radius: 15px;
+    color: white;
+    padding: 1%;
+    background: #467F9C;
+    border: none;
+}
+
+#nome{
+    width: 45%;
+}
+#cpf{
+    width: 25%;
+}
+
+#nasc{
+    width: 20%;
+}
+
+
+/* Table */
+.showRegisters{
+    margin: 0 7% 0 7%;
+    border-radius: 18px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #164056;
+}
+.showRegisters table {
+    padding: 0.5%;
+    border-collapse: collapse;
+    width: 100%;
+    background: #d9d9d9;
+    border-radius: 7px;
+}
+.showRegisters th{
+    background-color: #164056;
+    font-size: 18px;
+    color: white;
+    padding: 0.5%;
+    border-radius: 15px;
+}
+.showRegisters tr{
+    border-bottom:#333333 solid 0.5px;
+    padding: 1%; 
+}
+.showRegisters td{
+    padding: 0.5%;
+    border-right:#333333 solid 0.5px; 
+    text-align: center;
+}
+.rotulos table{
+    background: #164056;
+}
+.button{
+    border:none;
+}
+
+.showRegisters th:nth-child(1), .showRegisters td:nth-child(1) {
+    width: 25%; 
+}
+
+.showRegisters th:nth-child(2), .showRegisters td:nth-child(2) {
+    width: 15%; 
+}
+
+.showRegisters th:nth-child(3), .showRegisters td:nth-child(3) {
+    width: 10%; 
+}
+.showRegisters th:nth-child(4), .showRegisters td:nth-child(4) {
+    width: 9%; 
+}
+.showRegisters th:nth-child(5), .showRegisters td:nth-child(5) {
+    width: 9%; 
+}
+
+.sobreposicao {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para o efeito de borramento */
+}
+
+.sobreposicaoContainer{
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cadastrarAlunoDiv h1, .agendamentoDiv h1{
+    color: #467F9C;
+    font-size: 20px;
+    margin: 1%;
+}
+
+.cadastrarAlunoDiv, .cadastrarCarro, .editarCarro, .agendamentoDiv{
+    background: #164056;
+    padding: 5% 7% 5% 7%;
+    margin: 2%;
+    border-radius: 20px;
+    display: flex;
+    text-align: left;
+    flex-flow: column;
+}
+#nome1, #cpf1, #nasc1{
+    width: 100%;
+}
+
+.cadastrarAlunoDiv label, .cadastrarCarro label{
+    color: white;
+}
+
+#btnFecharSobreposicao{
+    border-radius: 12px;
+    color: white;
+    padding: 1%;
+    margin: 1%;
+    background: #333333;
+    border: none;
+}
+
+/* Gerenciamento de Carros */
+
+.cadastrarCarro{
+    text-align: center;
+}
+.cadastrarCarro div{
+    flex-flow: row nowrap;
+    text-align: center;
+}
+
+.cadastrarCarro h1{
+    color: white;
+    font-size: 20px;
+}
+
+.cadastrarCarro input[type="text"], .cadastrarCarro input[type="text"]{
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 2%;
+}
+
+#modelo1{
+    width: 30%;
+}
+#marca1{
+    width: 17%;
+}
+#ano1{
+    width: 12%;
+}
+#placa1{
+    width: 16%;
+}
+#capacidade1{
+    width: 20%;
+}
+
+.editarFormContainer{
+    margin: 5%;
+    padding: 2%;
+    
+}
+.editarFormContainer .cadastrarCarro{
+    flex-flow: row nowrap;
+}
+
+.editarFormContainer .cadastrarCarro div{
+    display: flex;
+    flex-flow: column wrap;
+}
+.editarFormContainer .cadastrarCarro input[type="text"]{
+    width: 98%;
+}
+.editarFormContainer .cadastrarCarro label{
+    font-size: 18px;
+}
+
+#editar{
+    font-size: 18px;
+    padding: 1%;
+}
+
+#removerpesquisa{
+    margin-bottom: 4%;
+    background: #333333;
+}
+
+.cadastrarAlunoDiv input[type="text"], .cadastrarAlunoDiv input[type="date"]{
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.7%;
+    border: none;
+}
+.agendamentoDiv{
+    text-align: center;
+}
+.agendamentoDiv select, .agendamentoDiv input[type="date"], .agendamentoDiv input[type="time"]{
+    border: none;
+    padding: 0.9%;
+    border-radius: 10px;
+    margin: 0.5%;
+}
